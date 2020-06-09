@@ -510,11 +510,6 @@ async def task():
 					contents12 = repo_restart.get_contents("restart.txt")
 					repo_restart.update_file(contents12.path, "restart_1", "", contents12.sha)
 			
-			################ 킬 목록 초기화 ################ 
-			if kill_Time.strftime('%Y-%m-%d ') + kill_Time.strftime('%H:%M') == now.strftime('%Y-%m-%d ') + now.strftime('%H:%M'):
-				kill_Time = kill_Time + datetime.timedelta(days=int(1))
-				await initkill_list()
-
 			################ 고정 보스 확인 ################ 
 			for i in range(fixed_bossNum):
 				################ before_alert1 ################ 
