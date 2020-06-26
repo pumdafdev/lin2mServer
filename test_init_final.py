@@ -2234,7 +2234,7 @@ while True:
 						kill_Data.append(tmp_fk)
 						tmp_fk = []
 					embed = discord.Embed(
-							description= ':skull_crossbones:' + sayMessage + ' 따히! [' + str(abc) + '번]\n',
+							description= sayMessage + ' ' + str(abc) + '번\n',
 							color=0xff00ff
 							)
 					await ctx.send(embed=embed, tts=False)
@@ -2245,7 +2245,7 @@ while True:
 
 				for i in range(len(kill_Data)):
 					if kill_Data[i][0] != '':
-						kill_output += ':skull_crossbones: ' + str(kill_Data[i][0]) + ' : ' + str(kill_Data[i][1]) + '번 따히!\n'
+						kill_output += str(kill_Data[i][0]) + ' ' + str(kill_Data[i][1]) + '번\n'
 
 				if kill_output != '' :
 					embed = discord.Embed(
